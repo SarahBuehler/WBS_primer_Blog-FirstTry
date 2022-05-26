@@ -1,0 +1,165 @@
+  * {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(247, 246, 242);
+      padding-inline-start: 0;
+  }
+  /* Logo */
+  
+  header {
+      font-size: xx-large;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: rgb(75, 101, 135);
+      padding-left: 20px;
+      background-color: rgb(247, 246, 242);
+  }
+  /* topnav bar style */
+  
+  main {
+      background-color: rgb(247, 246, 242);
+  }
+  
+  nav ul {
+      background-color: rgb(240, 229, 207);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  nav li {
+      margin: 0.5em;
+      background-color: rgb(240, 229, 207);
+  }
+  
+  nav a {
+      background-color: rgb(240, 229, 207);
+      font-size: x-large;
+  }
+  
+  @media (min-width: 45em) {
+      nav ul {
+          flex-direction: row;
+      }
+      nav li {
+          flex: 1;
+          font-size: 1em;
+      }
+  }
+  /* topnav link style */
+  
+  nav a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: x-large;
+      color: rgb(75, 101, 135);
+  }
+  
+  nav a:focus,
+  nav a:hover,
+  nav a:active {
+      text-decoration: underline;
+  }
+  /* Main part */
+  
+  #box1 {
+      grid-row-start: span 2;
+      text-align: center;
+  }
+  
+  .container {
+      display: grid;
+      grid-template-columns: 10% 40% auto;
+      grid-template-rows: auto auto auto;
+      gap: 10px;
+      padding: 1em;
+      min-width: 70%;
+      width: fit-content;
+      height: fit-content;
+  }
+  
+  .box img {
+      max-width: 90%;
+      max-height: 90%;
+      padding: 0;
+  }
+  
+  .box p {
+      max-width: 90%;
+      padding: 1em;
+  }
+  /* Nav left */
+  
+  #box1,
+  #nav-left ul,
+  #nav-left li,
+  #nav-left a {
+      background-color: rgb(240, 229, 207);
+  }
+  
+  #box1 li {
+      list-style: none;
+      padding: 15px 0;
+      /* verhindert das abschneiden des Textes bei kleiner Fensterbreite
+      zeigt den fehlenden Text dann als ... */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  #box1 a {
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(75, 101, 135);
+  }
+  
+  #box1 {
+      text-align: center;
+  }
+  
+  #box1 a:focus,
+  #box1 a:hover,
+  #box1 a:active {
+      text-decoration: underline;
+  }
+  /* Footer */
+  
+  footer {
+      display: inline-block;
+      background-color: rgb(240, 229, 207);
+      width: 100%;
+      margin-top: 16px;
+      ;
+  }
+  
+  footer ul,
+  footer li,
+  footer img,
+  footer a {
+      background-color: rgb(240, 229, 207);
+  }
+  
+  footer ul {
+      list-style: none;
+      display: flex;
+  }
+  
+  footer li {
+      margin: 0.5em;
+      text-align: center;
+  }
+  
+  footer li {}
+  
+  @media (min-width: 45em) {
+      footer ul {
+          flex-direction: row;
+      }
+      footer li {
+          flex: 1;
+          font-size: 1em;
+      }
+  }
