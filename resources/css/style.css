@@ -153,8 +153,6 @@
       text-align: center;
   }
   
-  footer li {}
-  
   @media (min-width: 45em) {
       footer ul {
           flex-direction: row;
